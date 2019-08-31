@@ -46,4 +46,5 @@ kl_arr=[calc_kl(p_mu,p_sigma,q_mu,q_sigma)[0] for q_sigma in q_sigma_arr]
 plt.plot(q_sigma_arr,kl_arr)
 plt.xticks(ticks=np.arange(0,5,1))
 plt.ylim(0,1)
+plt.savefig("q_sig_change.png")
 #%%
